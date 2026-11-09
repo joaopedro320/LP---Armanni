@@ -1,0 +1,12 @@
+Fotos de banco usadas na LP (Unsplash, Unsplash License: uso gratuito, inclusive comercial, sem atribuição obrigatória)
+foto-hero-cozinha-marmore.jpg      images.unsplash.com/photo-1610276099118-c929abaaa80a
+foto-bancada-marmore-detalhe.jpg   images.unsplash.com/photo-1762304817469-1d6c808324ee
+foto-bancada-marmore-cafe.jpg      images.unsplash.com/photo-1762304817469-1d6c808324ee
+foto-ilha-cozinha-marmore.jpg      images.unsplash.com/photo-1682888813913-e13f18692019
+foto-ilha-granito.jpg              images.unsplash.com/photo-1611095210561-67f0832b1ca3
+foto-lavatorio-esculpido-pedra.jpg images.unsplash.com/photo-1722923400899-af08ffc715c6
+foto-escada-marmore.jpg            images.unsplash.com/photo-1781047884697-53a3dc4d7eee
+foto-revestimento-painel.jpg       images.unsplash.com/photo-1756079664354-34944e001f6d
+foto-textura-quartzo.jpg           images.unsplash.com/photo-1771795638652-01821921a461
+
+Fotos de obra reais (obra-*.jpg): site antigo armannimarmoraria.com.br

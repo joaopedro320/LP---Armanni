@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 1] GOOGLE TAG MANAGER (HEAD)
+     ------------------------------------------------------------------
+     O QUE COLAR: o primeiro bloco do GTM, o mais alto possível no <head>.
+     Mesmo código nas 3 páginas: index.html, obrigado.html e 404.html.
+     EXEMPLO:
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+     })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 2] VERIFICAÇÕES DE DOMÍNIO
+     ------------------------------------------------------------------
+     O QUE COLAR: metatags de verificação (Meta Business, Google Search
+     Console, Pinterest etc.).
+     EXEMPLO:
+     <meta name="facebook-domain-verification" content="xxxxxxxx">
+     <meta name="google-site-verification" content="xxxxxxxx">
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 3] META PIXEL DIRETO (SÓ SE NÃO FOR USAR VIA GTM)
+     ------------------------------------------------------------------
+     O QUE COLAR: código base do Pixel. Os eventos Lead e Contact já são
+     disparados pelo assets/js/tracking.js quando o fbq existe.
+     EXEMPLO:
+     <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+     document,'script','https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init','000000000000000');fbq('track','PageView');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 4] GTAG GOOGLE ADS / GA4 DIRETO (SÓ SE NÃO FOR USAR VIA GTM)
+     ------------------------------------------------------------------
+     O QUE COLAR: tag global do Google. Os rótulos de conversão ficam em
+     assets/js/tracking.js (GADS_CONVERSAO_LEAD e GADS_CONVERSAO_WHATSAPP).
+     EXEMPLO:
+     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-000000000"></script>
+     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+     gtag('js',new Date());gtag('config','AW-000000000');gtag('config','G-XXXXXXX');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<title>Marmoraria em São Bernardo do Campo e ABC | Armanni Marmoraria</title>
+<meta name="description" content="Marmoraria em São Bernardo do Campo que atende o ABC e São Paulo. Bancadas, ilhas, lavatórios, cubas esculpidas e escadas sob medida em granito, mármore, quartzo e quartzito. Medição sem custo.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.armannimarmoraria.com.br/">
+<meta name="theme-color" content="#3B302B">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Armanni Marmoraria">
+<meta property="og:title" content="Armanni Marmoraria | Marmoraria sob medida em São Bernardo do Campo">
+<meta property="og:description" content="Bancadas, ilhas, lavatórios, cubas esculpidas e escadas sob medida no ABC e em São Paulo. Medição sem custo e garantia de 12 meses.">
+<meta property="og:url" content="https://www.armannimarmoraria.com.br/">
+<meta property="og:image" content="https://www.armannimarmoraria.com.br/assets/img/og-armanni.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bancada de cozinha em granito preto feita pela Armanni Marmoraria">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Armanni Marmoraria | Marmoraria sob medida em São Bernardo do Campo">
+<meta name="twitter:description" content="Bancadas, ilhas, lavatórios, cubas esculpidas e escadas sob medida no ABC e em São Paulo.">
+<meta name="twitter:image" content="https://www.armannimarmoraria.com.br/assets/img/og-armanni.jpg">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" as="image" href="assets/img/foto-hero-cozinha-marmore.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.armannimarmoraria.com.br/#empresa",
+  "name": "Armanni Marmoraria",
+  "url": "https://www.armannimarmoraria.com.br/",
+  "logo": "https://www.armannimarmoraria.com.br/assets/img/logo-armanni.png",
+  "image": "https://www.armannimarmoraria.com.br/assets/img/og-armanni.jpg",
+  "description": "Marmoraria em São Bernardo do Campo com fabricação e instalação de bancadas, ilhas, lavatórios, cubas esculpidas, escadas, pisos e revestimentos sob medida em granito, mármore, quartzo, quartzito, lâminas ultracompactas e SSM.",
+  "telephone": "+55-11-94870-9543",
+  "email": "contato@armannimarmoraria.com.br",
+  "taxID": "44.972.078/0001-43",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Praça Pedro Maçom, 26, Jardim Lavínia",
+    "addressLocality": "São Bernardo do Campo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": ["São Bernardo do Campo", "Santo André", "São Caetano do Sul", "Grande ABC", "São Paulo"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "paymentAccepted": "Pix, transferência bancária, cartão de crédito",
+  "sameAs": ["https://www.instagram.com/armannimarmoraria/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Vocês fazem a medição no local?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, a medição técnica é feita no local e não tem custo para o cliente." } },
+    { "@type": "Question", "name": "Quanto tempo demora para receber um orçamento?", "acceptedAnswer": { "@type": "Answer", "text": "Depende da complexidade do projeto, da quantidade de peças, do material e das informações disponíveis, mas em geral o orçamento sai em no máximo 24 horas." } },
+    { "@type": "Question", "name": "Vocês fazem orçamento sem medidas?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Fazemos uma estimativa inicial com as informações e medidas que você passar. Para fechar o pedido, as medidas técnicas são confirmadas na medição." } },
+    { "@type": "Question", "name": "Qual é o prazo de entrega?", "acceptedAnswer": { "@type": "Answer", "text": "O prazo padrão é de 20 dias úteis após a medição e a aprovação do projeto." } },
+    { "@type": "Question", "name": "Quais materiais vocês trabalham?", "acceptedAnswer": { "@type": "Answer", "text": "Granitos, mármores, quartzos industrializados, quartzitos, lâminas ultracompactas e SSM." } },
+    { "@type": "Question", "name": "Qual é o melhor material para bancada de cozinha?", "acceptedAnswer": { "@type": "Answer", "text": "Depende do projeto, do uso, do orçamento e das características desejadas. Granitos, quartzos, quartzitos e superfícies ultracompactas têm características diferentes, e nossa equipe apresenta opções e orienta a escolha conforme o ambiente." } },
+    { "@type": "Question", "name": "Mármore pode ser usado na cozinha?", "acceptedAnswer": { "@type": "Answer", "text": "Pode ser usado o mármore dolomítico, com atenção especial, porque é uma pedra natural mais suscetível a manchas e ao ataque de substâncias ácidas." } },
+    { "@type": "Question", "name": "Posso escolher a chapa usada no meu projeto?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, dependendo do tamanho do projeto. Quando a chapa inteira é usada, você pode escolher, e a equipe orienta a conferência da chapa junto ao fornecedor antes da fabricação." } },
+    { "@type": "Question", "name": "Devo instalar primeiro os móveis ou as pedras?", "acceptedAnswer": { "@type": "Answer", "text": "As pedras podem ser instaladas em qualquer ordem, mas indicamos as pedras primeiro para que os itens fiquem independentes e o peso não sobrecarregue os móveis. Há exceções, como penínsulas ou mesas em que a pedra depende de uma base." } },
+    { "@type": "Question", "name": "Quais são as formas de pagamento?", "acceptedAnswer": { "@type": "Answer", "text": "Pix, transferência bancária e cartão de crédito em até 18 parcelas, sendo até 6 sem juros, conforme as condições vigentes. A entrada é de 50% e o saldo segue o que estiver previsto no contrato." } },
+    { "@type": "Question", "name": "A Armanni oferece garantia?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A garantia contratual do serviço é de 12 meses." } },
+    { "@type": "Question", "name": "Como limpar e conservar a bancada?", "acceptedAnswer": { "@type": "Answer", "text": "Use pano macio, água e detergente neutro, evitando produtos abrasivos e químicos não recomendados pelo fabricante. A hidrofugação deve ser refeita a cada 6 meses." } }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 5] GTM NOSCRIPT (LOGO APÓS ABRIR O <body>)
+     ------------------------------------------------------------------
+     EXEMPLO:
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="topo__in">
+    <a href="#inicio" class="topo__logo" aria-label="Armanni Marmoraria, voltar ao início">
+      <img src="assets/img/logo-armanni.png" alt="Armanni Marmoraria" width="560" height="217">
+    </a>
+    <nav class="topo__nav" id="menu" aria-label="Menu principal">
+      <a href="#obras">Obras</a>
+      <a href="#servicos">O que fazemos</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#loja">Loja</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--sm" href="#" data-wa="topo">Orçamento no WhatsApp</a>
+    <button class="topo__burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <h1 class="hero__titulo">
+        <span class="l">Marmoraria</span>
+        <span class="l">perto de você,</span>
+        <span class="l l--fina">em São Bernardo e no ABC</span>
+      </h1>
+      <p class="hero__sub">Bancadas, ilhas, lavatórios, cubas esculpidas e escadas sob medida em granito, mármore, quartzo, quartzito, lâminas ultracompactas e SSM. Da escolha da pedra à instalação.</p>
+      <div class="hero__acoes">
+        <a class="btn" href="#" data-wa="hero">Pedir orçamento no WhatsApp</a>
+        <a class="link" href="#obras">Ver obras entregues</a>
+      </div>
+      <ul class="hero__fatos">
+        <li><strong>Medição no local</strong> sem custo</li>
+        <li><strong>Orçamento</strong> em geral em até 24h</li>
+        <li><strong>Garantia</strong> de 12 meses</li>
+      </ul>
+    </div>
+
+    <figure class="hero__foto moldura" >
+      <svg class="moldura__linha" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M30 100 H0 V0 H100 V100 H70"/>
+      </svg>
+      <div class="hero__img" data-parallax>
+        <img src="assets/img/foto-hero-cozinha-marmore.jpg" alt="Cozinha clara com ilha em pedra e cuba embutida" width="784" height="784" fetchpriority="high">
+      </div>
+      <figcaption>Bancadas sob medida</figcaption>
+    </figure>
+    <figure class="hero__mini">
+      <img src="assets/img/foto-bancada-marmore-detalhe.jpg" alt="Detalhe de bancada em pedra clara com veios" width="784" height="784">
+    </figure>
+  </section>
+
+  <!-- NÚMEROS DO ATENDIMENTO -->
+  <section class="fatos" aria-label="Como a Armanni trabalha">
+    <dl class="fatos__lista">
+      <div><dt>20 dias úteis</dt><dd>de prazo padrão após medição e aprovação do projeto</dd></div>
+      <div><dt>Até 18x</dt><dd>no cartão, sendo até 6x sem juros</dd></div>
+      <div><dt>45 km</dt><dd>de raio de atendimento a partir de São Bernardo</dd></div>
+      <div><dt>Mais de 20 anos</dt><dd>de história, somando a marmoraria que deu origem à Armanni</dd></div>
+    </dl>
+  </section>
+
+  <!-- OBRAS -->
+  <section class="obras" id="obras">
+    <div class="sec-cab">
+      <h2>Obras entregues</h2>
+      <p>Fotos reais de cozinhas e banheiros entregues pela Armanni para clientes do ABC e de São Paulo. Toque na foto para ver em tela cheia.</p>
+    </div>
+    <div class="obras__grade" id="galeria">
+      <button class="obra" data-full="assets/img/obra-cozinha-granito-preto.jpg"><img src="assets/img/obra-cozinha-granito-preto.jpg" alt="Bancada de cozinha em granito preto com cooktop e cuba de inox" width="1038" height="680" loading="lazy"><span>Cozinha em granito preto</span></button>
+      <button class="obra" data-full="assets/img/obra-lavatorio-esculpido-branco.jpg"><img src="assets/img/obra-lavatorio-esculpido-branco.jpg" alt="Lavatório com cuba esculpida branca" width="1038" height="610" loading="lazy"><span>Cuba esculpida</span></button>
+      <button class="obra" data-full="assets/img/obra-bancada-gourmet-preta.jpg"><img src="assets/img/obra-bancada-gourmet-preta.jpg" alt="Bancada preta com cuba e cooktop" width="1038" height="585" loading="lazy"><span>Bancada em granito preto</span></button>
+      <button class="obra" data-full="assets/img/obra-lavatorio-marmore-bege.jpg"><img src="assets/img/obra-lavatorio-marmore-bege.jpg" alt="Lavatório em mármore bege com cuba esculpida" width="1038" height="590" loading="lazy"><span>Lavatório em mármore</span></button>
+      <button class="obra" data-full="assets/img/obra-cozinha-cooktop-granito.jpg"><img src="assets/img/obra-cozinha-cooktop-granito.jpg" alt="Bancada de cozinha em granito escuro com cooktop embutido" width="1038" height="575" loading="lazy"><span>Cozinha com cooktop embutido</span></button>
+      <button class="obra" data-full="assets/img/obra-lavatorio-esculpido-quartzo.jpg"><img src="assets/img/obra-lavatorio-esculpido-quartzo.jpg" alt="Lavatório com cuba esculpida clara" width="1038" height="585" loading="lazy"><span>Lavatório esculpido</span></button>
+      <button class="obra" data-full="assets/img/obra-cuba-inox-bancada-branca.jpg"><img src="assets/img/obra-cuba-inox-bancada-branca.jpg" alt="Bancada branca com cuba de inox" width="1038" height="680" loading="lazy"><span>Bancada clara com cuba inox</span></button>
+      <button class="obra" data-full="assets/img/obra-lavatorio-marmore-detalhe.jpg"><img src="assets/img/obra-lavatorio-marmore-detalhe.jpg" alt="Detalhe de lavatório em mármore bege" width="1038" height="680" loading="lazy"><span>Detalhe em mármore</span></button>
+    </div>
+    <div class="obras__google">
+      <p><strong>105 avaliações no Google.</strong> Veja o que os clientes dizem sobre a Armanni.</p>
+      <a class="link" href="https://g.page/r/CbrfBFIB26atEAI/review" target="_blank" rel="noopener" data-evt="google_reviews">Ler avaliações no Google</a>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos">
+    <div class="sec-cab">
+      <h2>O que a Armanni faz sob medida</h2>
+      <p>Passe o cursor ou toque em cada item.</p>
+    </div>
+    <div class="servicos__corpo">
+      <ol class="servicos__lista" role="tablist" aria-label="Produtos">
+        <li><button role="tab" aria-selected="true" aria-controls="sv-painel" data-img="assets/img/foto-ilha-cozinha-marmore.jpg" data-txt="O que mais sai da nossa produção. Bancadas retas, em L, com cuba, cooktop embutido e acabamentos como meia-esquadria, saia e frontão.">Bancadas de cozinha</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="sv-painel" data-img="assets/img/foto-ilha-granito.jpg" data-txt="Ilhas, penínsulas, bancadas de área gourmet e de churrasqueira, mesas e tampos no mesmo material da cozinha ou em contraste.">Ilhas, penínsulas e áreas gourmet</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="sv-painel" data-img="assets/img/foto-lavatorio-esculpido-pedra.jpg" data-txt="Lavatórios, bancadas de banheiro e lavabo, nichos e prateleiras, com cubas esculpidas de diversos modelos.">Banheiros, lavabos e cubas esculpidas</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="sv-painel" data-img="assets/img/foto-escada-marmore.jpg" data-txt="Escadas e degraus em pedra natural ou industrializada, feitos sob medida para a obra.">Escadas e degraus</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="sv-painel" data-img="assets/img/foto-revestimento-painel.jpg" data-txt="Pisos em pedra, revestimentos de parede, painéis decorativos, soleiras, peitoris e rodapés.">Pisos, revestimentos e painéis</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="sv-painel" data-img="assets/img/foto-bancada-marmore-cafe.jpg" data-txt="Bancadas de lavanderia, balcões comerciais, túmulos, jazigos e outras peças especiais nos materiais com que trabalhamos.">Lavanderias, balcões e peças especiais</button></li>
+      </ol>
+      <div class="servicos__painel moldura moldura--fina" id="sv-painel" role="tabpanel" aria-live="polite">
+        <div class="servicos__img"><img src="assets/img/foto-ilha-cozinha-marmore.jpg" alt="Bancadas de cozinha" width="1044" height="784" loading="lazy"></div>
+        <p class="servicos__txt">O que mais sai da nossa produção. Bancadas retas, em L, com cuba, cooktop embutido e acabamentos como meia-esquadria, saia e frontão.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS -->
+  <section class="materiais" aria-labelledby="mat-t">
+    <div class="materiais__in">
+      <h2 id="mat-t">Seis materiais e ajuda para escolher</h2>
+      <p class="materiais__intro">Cada pedra se comporta de um jeito diante de calor, riscos, manchas e produtos químicos. Antes do orçamento, a gente entende onde a peça vai ficar e mostra as opções que fazem sentido para o uso e para o seu orçamento.</p>
+      <ul class="materiais__lista">
+        <li><span>Granitos</span><small>Do clássico Verde Ubatuba, de ótimo custo-benefício, ao Preto São Gabriel e ao Branco Itaúnas.</small></li>
+        <li><span>Mármores</span><small>Para banheiros, painéis e pisos. Na cozinha, indicamos o dolomítico, com os cuidados certos.</small></li>
+        <li><span>Quartzos</span><small>Superfícies industrializadas para bancadas de cozinha e banheiro.</small></li>
+        <li><span>Quartzitos</span><small>Pedra natural para projetos de alto padrão.</small></li>
+        <li><span>Lâminas ultracompactas</span><small>Superfícies para bancadas, revestimentos e painéis.</small></li>
+        <li><span>SSM</span><small>Superfície sólida mineral para bancadas.</small></li>
+      </ul>
+      <a class="btn btn--claro" href="#" data-wa="materiais">Quero ajuda para escolher a pedra</a>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="sec-cab">
+      <h2>Do primeiro contato à instalação</h2>
+      <p>Projetos majoritariamente sob medida, com a Armanni acompanhando cada etapa.</p>
+    </div>
+    <ol class="processo__trilha">
+      <li><b>1</b><h3>Orientação</h3><p>Você conta o que precisa e a gente ajuda a escolher o material certo para o ambiente.</p></li>
+      <li><b>2</b><h3>Orçamento</h3><p>Com as medidas que você tiver, já sai uma estimativa. Em geral, em até 24 horas.</p></li>
+      <li><b>3</b><h3>Medição técnica</h3><p>Vamos até a obra medir tudo, sem custo para você.</p></li>
+      <li><b>4</b><h3>Planejamento</h3><p>Projeto aprovado, a fabricação é planejada peça por peça.</p></li>
+      <li><b>5</b><h3>Acabamento</h3><p>Bordas, rebaixos, cubas e recortes conforme o que foi especificado.</p></li>
+      <li><b>6</b><h3>Instalação</h3><p>Peças instaladas na obra. Prazo padrão de 20 dias úteis após medição e aprovação.</p></li>
+    </ol>
+  </section>
+
+  <!-- LOJA -->
+  <section class="loja" id="loja">
+    <div class="loja__texto">
+      <h2>Venha ver as pedras de perto</h2>
+      <p>Na nossa loja em São Bernardo do Campo você vê os materiais pessoalmente, entende como cada um se comporta e conversa com quem vai cuidar do seu projeto. O café e o pão de queijo ficam por nossa conta.</p>
+      <p>A Armanni nasceu da aquisição de uma marmoraria com 13 anos de mercado e segue há 8 anos com a gestão atual, somando mais de 20 anos de história.</p>
+      <dl class="loja__dados">
+        <div><dt>Endereço</dt><dd>Praça Pedro Maçom, 26, Jardim Lavínia, São Bernardo do Campo, SP</dd></div>
+        <div><dt>Horário</dt><dd>Segunda a sexta, das 8h às 18h<br>Sábado, das 9h às 16h</dd></div>
+        <div><dt>Atendemos</dt><dd>Todo o ABC Paulista e São Paulo capital. Outras cidades, como Osasco, Guarulhos e Jundiaí, conforme o projeto.</dd></div>
+      </dl>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Pedro+Ma%C3%A7om+26+S%C3%A3o+Bernardo+do+Campo" target="_blank" rel="noopener" data-evt="rota_maps">Abrir rota no Google Maps</a>
+    </div>
+    <div class="loja__mapa moldura moldura--fina">
+      <iframe title="Mapa da Armanni Marmoraria em São Bernardo do Campo" src="https://www.google.com/maps?q=Pra%C3%A7a+Pedro+Ma%C3%A7om,+26,+S%C3%A3o+Bernardo+do+Campo,+SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="parceiros" id="parceiros">
+    <div class="parceiros__in">
+      <div>
+        <h2>Para arquitetos, designers e construtores</h2>
+        <p>Um canal próprio para quem especifica e executa obras. Orçamento ágil, orientação técnica sobre materiais e acabamentos e o compromisso de seguir a especificação do seu projeto, em obras residenciais e comerciais.</p>
+        <a class="btn btn--claro" href="#" data-wa="parceiros" data-wa-tipo="parceiros">Falar com o time de parcerias</a>
+      </div>
+      <ul class="parceiros__quem" aria-label="Profissionais atendidos">
+        <li>Arquitetos</li>
+        <li>Designers de interiores</li>
+        <li>Engenheiros</li>
+        <li>Construtoras</li>
+        <li>Empresas de reforma</li>
+        <li>Marcenarias</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="duvidas" id="duvidas">
+    <div class="sec-cab">
+      <h2>Dúvidas frequentes</h2>
+      <p>O que os clientes mais perguntam no atendimento.</p>
+    </div>
+    <div class="duvidas__lista">
+      <details><summary>Vocês fazem a medição no local?</summary><p>Sim, a medição técnica é feita no local e não tem custo para o cliente.</p></details>
+      <details><summary>Quanto tempo demora para receber um orçamento?</summary><p>Depende da complexidade do projeto, da quantidade de peças, do material e das informações disponíveis, mas em geral o orçamento sai em no máximo 24 horas.</p></details>
+      <details><summary>Vocês fazem orçamento sem medidas?</summary><p>Sim. Fazemos uma estimativa inicial com as informações e medidas que você passar. Para fechar o pedido, as medidas técnicas são confirmadas na medição.</p></details>
+      <details><summary>Qual é o prazo de entrega?</summary><p>O prazo padrão é de 20 dias úteis após a medição e a aprovação do projeto.</p></details>
+      <details><summary>Quais materiais vocês trabalham?</summary><p>Granitos, mármores, quartzos industrializados, quartzitos, lâminas ultracompactas e SSM.</p></details>
+      <details><summary>Qual é o melhor material para bancada de cozinha?</summary><p>Depende do projeto, do uso, do orçamento e das características desejadas. Granitos, quartzos, quartzitos e superfícies ultracompactas têm características diferentes, e nossa equipe apresenta opções e orienta a escolha conforme o ambiente.</p></details>
+      <details><summary>Mármore pode ser usado na cozinha?</summary><p>Pode ser usado o mármore dolomítico, com atenção especial, porque é uma pedra natural mais suscetível a manchas e ao ataque de substâncias ácidas.</p></details>
+      <details><summary>Posso escolher a chapa usada no meu projeto?</summary><p>Sim, dependendo do tamanho do projeto. Quando a chapa inteira é usada, você pode escolher, e a equipe orienta a conferência da chapa junto ao fornecedor antes da fabricação.</p></details>
+      <details><summary>Devo instalar primeiro os móveis ou as pedras?</summary><p>As pedras podem ser instaladas em qualquer ordem, mas indicamos as pedras primeiro para que os itens fiquem independentes e o peso não sobrecarregue os móveis. Há exceções, como penínsulas ou mesas em que a pedra depende de uma base.</p></details>
+      <details><summary>Quais são as formas de pagamento?</summary><p>Pix, transferência bancária e cartão de crédito em até 18 parcelas, sendo até 6 sem juros, conforme as condições vigentes. A entrada é de 50% e o saldo segue o que estiver previsto no contrato.</p></details>
+      <details><summary>A Armanni oferece garantia?</summary><p>Sim. A garantia contratual do serviço é de 12 meses.</p></details>
+      <details><summary>Como limpar e conservar a bancada?</summary><p>Use pano macio, água e detergente neutro, evitando produtos abrasivos e químicos não recomendados pelo fabricante. A hidrofugação deve ser refeita a cada 6 meses.</p></details>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="contato" id="orcamento">
+    <div class="contato__texto">
+      <h2>Peça seu orçamento</h2>
+      <p>Preencha em menos de um minuto. A mensagem chega pronta no nosso WhatsApp e a equipe responde no horário de atendimento.</p>
+      <p class="contato__alt">Prefere falar direto? <a href="#" data-wa="form_lateral">Chamar no WhatsApp (11) 94870-9543</a></p>
+    </div>
+    <form class="form" id="form-orcamento" novalidate>
+      <div class="campo">
+        <label for="f-nome">Seu nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required minlength="2">
+      </div>
+      <div class="campo">
+        <label for="f-whats">WhatsApp com DDD</label>
+        <input id="f-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required pattern="\(\d{2}\) \d{4,5}-\d{4}">
+      </div>
+      <div class="campo">
+        <label for="f-cidade">Cidade e bairro da obra</label>
+        <input id="f-cidade" name="cidade" type="text" autocomplete="address-level2" required minlength="3">
+      </div>
+      <div class="campo">
+        <label for="f-peca">O que você precisa</label>
+        <select id="f-peca" name="peca" required>
+          <option value="" selected disabled>Escolha uma opção</option>
+          <option>Bancada de cozinha</option>
+          <option>Ilha, península ou área gourmet</option>
+          <option>Banheiro, lavabo ou cuba esculpida</option>
+          <option>Escada ou degraus</option>
+          <option>Piso, revestimento ou painel</option>
+          <option>Lavanderia, balcão ou peça especial</option>
+          <option>Mais de uma peça</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="f-material">Material de interesse</label>
+        <select id="f-material" name="material" required>
+          <option value="" selected disabled>Escolha uma opção</option>
+          <option>Ainda não sei, quero orientação</option>
+          <option>Granito</option>
+          <option>Mármore</option>
+          <option>Quartzo</option>
+          <option>Quartzito</option>
+          <option>Lâmina ultracompacta</option>
+          <option>SSM</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="f-medidas">Já tem projeto ou medidas?</label>
+        <select id="f-medidas" name="medidas" required>
+          <option value="" selected disabled>Escolha uma opção</option>
+          <option>Sim, tenho projeto</option>
+          <option>Tenho só as medidas</option>
+          <option>Ainda não, preciso da medição</option>
+        </select>
+      </div>
+      <div class="campo campo--larga">
+        <label for="f-msg">Detalhes (opcional)</label>
+        <textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: bancada em L de 2,60 m com cooktop"></textarea>
+      </div>
+      <button class="btn btn--form" type="submit" disabled>Enviar e abrir o WhatsApp</button>
+      <p class="form__nota" aria-live="polite">Preencha os campos para liberar o envio.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="rodape__in">
+    <img src="assets/img/logo-armanni-claro.png" alt="Armanni Marmoraria" width="560" height="217" loading="lazy" class="rodape__logo">
+    <div class="rodape__col">
+      <p>Praça Pedro Maçom, 26, Jardim Lavínia<br>São Bernardo do Campo, SP</p>
+      <p><a href="#" data-wa="rodape">(11) 94870-9543</a><br><a href="mailto:contato@armannimarmoraria.com.br">contato@armannimarmoraria.com.br</a></p>
+    </div>
+    <div class="rodape__col">
+      <p>Seg. a sex., 8h às 18h<br>Sáb., 9h às 16h</p>
+      <p><a href="https://www.instagram.com/armannimarmoraria/" target="_blank" rel="noopener">Instagram @armannimarmoraria</a></p>
+    </div>
+  </div>
+  <div class="rodape__base">
+    <p>Armanni Marmoraria, CNPJ 44.972.078/0001-43</p>
+    <p><a href="https://www.instagram.com/qh4growth/" target="_blank" rel="noopener">Desenvolvido pro QH4 Growth</a></p>
+  </div>
+</footer>
+
+<a class="wa-flut" href="#" data-wa="flutuante" aria-label="Falar com a Armanni no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.7 14.7 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto em tela cheia" hidden>
+  <button class="lightbox__fechar" type="button" aria-label="Fechar">Fechar</button>
+  <button class="lightbox__nav lightbox__nav--ant" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--prox" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script src="assets/js/tracking.js"></script>
+<script src="assets/js/main.js" defer></script>
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 6] SCRIPTS DE TERCEIROS (ANTES DO </body>)
+     ------------------------------------------------------------------
+     O QUE COLAR: chat, heatmap (Clarity, Hotjar), widgets.
+     EXEMPLO:
+     <script type="text/javascript">(function(c,l,a,r,i,t,y){...})(window,document,"clarity","script","xxxxxxx");</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- IVO (Funil do LIA & IVO), padrão QH4 -->
+<script src="https://app-validacao-lp-sapp-validacao-lp.vercel.app/api/t" data-lp="lp-armanni-marmoraria" defer></script>
+</body>
+</html>

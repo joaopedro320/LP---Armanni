@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 1] GOOGLE TAG MANAGER (HEAD)
+     ------------------------------------------------------------------
+     O QUE COLAR: o primeiro bloco do GTM, o mais alto possível no <head>.
+     Mesmo código nas 3 páginas: index.html, obrigado.html e 404.html.
+     EXEMPLO:
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+     })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 2] VERIFICAÇÕES DE DOMÍNIO
+     ------------------------------------------------------------------
+     O QUE COLAR: metatags de verificação (Meta Business, Google Search
+     Console, Pinterest etc.).
+     EXEMPLO:
+     <meta name="facebook-domain-verification" content="xxxxxxxx">
+     <meta name="google-site-verification" content="xxxxxxxx">
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 3] META PIXEL DIRETO (SÓ SE NÃO FOR USAR VIA GTM)
+     ------------------------------------------------------------------
+     O QUE COLAR: código base do Pixel. Os eventos Lead e Contact já são
+     disparados pelo assets/js/tracking.js quando o fbq existe.
+     EXEMPLO:
+     <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+     document,'script','https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init','000000000000000');fbq('track','PageView');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 4] GTAG GOOGLE ADS / GA4 DIRETO (SÓ SE NÃO FOR USAR VIA GTM)
+     ------------------------------------------------------------------
+     O QUE COLAR: tag global do Google. Os rótulos de conversão ficam em
+     assets/js/tracking.js (GADS_CONVERSAO_LEAD e GADS_CONVERSAO_WHATSAPP).
+     EXEMPLO:
+     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-000000000"></script>
+     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+     gtag('js',new Date());gtag('config','AW-000000000');gtag('config','G-XXXXXXX');</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<title>Recebemos seu pedido | Armanni Marmoraria</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#3B302B">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/paginas.css">
+</head>
+<body class="pagina">
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 5] GTM NOSCRIPT (LOGO APÓS ABRIR O <body>)
+     ------------------------------------------------------------------
+     EXEMPLO:
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<main class="aviso">
+  <div class="aviso__caixa moldura moldura--fina">
+    <a href="./" class="aviso__logo"><img src="assets/img/logo-armanni.png" alt="Armanni Marmoraria" width="560" height="217"></a>
+    <h1>Pedido recebido</h1>
+    <p>Estamos abrindo o WhatsApp da Armanni com a sua mensagem pronta. É só tocar em enviar.</p>
+    <p class="aviso__conta" aria-live="polite">Abrindo em <span id="conta">3</span> segundos...</p>
+    <a class="btn" id="btn-wa" href="#">Abrir o WhatsApp agora</a>
+    <p class="aviso__volta"><a class="link" href="./">Voltar para o site</a></p>
+  </div>
+</main>
+
+<script src="assets/js/tracking.js"></script>
+<script>
+/* ██████████████████████████████████████████████████████████████████
+   [QH4 SLOT 8] CONVERSÃO DA PÁGINA DE OBRIGADO
+   ------------------------------------------------------------------
+   O evento thank_you_view já vai pro dataLayer abaixo (use como gatilho
+   no GTM). Se não usar GTM, cole aqui a conversão direta. EXEMPLO:
+   gtag('event','conversion',{send_to:'AW-000000000/XXXXXXXX'});
+   fbq('track','Lead');  (só se o Lead não estiver vindo do formulário)
+   ██████████████████████████████████████████████████████████████████ */
+(function () {
+  var cfg = window.QH4_CONFIG;
+  window.qh4Track('thank_you_view');
+  var msg = null;
+  try { msg = sessionStorage.getItem('qh4_wa_msg'); sessionStorage.removeItem('qh4_wa_msg'); } catch (e) {}
+  if (!msg) msg = cfg.MSG_POS_WEBHOOK;
+  var url = 'https://wa.me/' + cfg.WHATSAPP + '?text=' + encodeURIComponent(msg);
+  var btn = document.getElementById('btn-wa');
+  btn.href = url;
+  btn.addEventListener('click', function () { window.qh4Track('whatsapp_click', { wa_local: 'obrigado' }); });
+  var n = 3, el = document.getElementById('conta');
+  var t = setInterval(function () {
+    n--; el.textContent = n;
+    if (n <= 0) { clearInterval(t); window.qh4Track('whatsapp_click', { wa_local: 'obrigado_auto' }); window.location.href = url; }
+  }, 1000);
+})();
+</script>
+
+<!-- ██████████████████████████████████████████████████████████████████
+     [QH4 SLOT 6] SCRIPTS DE TERCEIROS (ANTES DO </body>)
+     ------------------------------------------------------------------
+     O QUE COLAR: chat, heatmap (Clarity, Hotjar), widgets.
+     EXEMPLO:
+     <script type="text/javascript">(function(c,l,a,r,i,t,y){...})(window,document,"clarity","script","xxxxxxx");</script>
+     ██████████████████████████████████████████████████████████████████ -->
+
+<!-- IVO (Funil do LIA & IVO), padrão QH4 -->
+<script src="https://app-validacao-lp-sapp-validacao-lp.vercel.app/api/t" data-lp="lp-armanni-marmoraria" defer></script>
+</body>
+</html>

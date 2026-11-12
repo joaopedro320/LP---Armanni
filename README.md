@@ -39,10 +39,9 @@ TRACKING-QH4.md       onde colar GTM, Pixel e demais códigos + eventos
 
 Tudo veio do briefing respondido pela Fernanda (09/11/2026), do resumo comercial da conta e dos dados de contato do site atual (endereço e e-mail). Nada foi inventado:
 
-- Mais de 20 anos de história: briefing diz 8 anos de gestão atual + 13 anos da marmoraria adquirida.
-- Prazo de 20 dias úteis, garantia de 12 meses, medição sem custo, orçamento em até 24h, pagamento em até 18x (até 6x sem juros), entrada de 50%: FAQ do briefing.
+- Garantia de 12 meses, medição sem custo, orçamento em até 24h, pagamento em até 18x (até 6x sem juros), entrada de 50%: FAQ do briefing.
 - Café e pão de queijo na loja: diferenciais do briefing.
-- 105 avaliações no Google: resumo da conta. Link de avaliações do briefing.
+- "Mais de 100 avaliações no Google": texto FIXO no código (o resumo da conta falava em 105). Não atualiza sozinho; ver nota abaixo.
 - A comissão de 10% para parceiros NÃO aparece na LP (a cliente pediu cuidado com essa comunicação). Fica para o atendimento.
 - Fotos de banco (Unsplash): lista e IDs em `assets/img/CREDITOS.txt`.
 - O site antigo dizia "desde 1998"; não usei porque conflita com o briefing.
@@ -60,3 +59,12 @@ Paleta do briefing: café #3B302B, bege #B49A7A, areia #E8DFD2, off-white #F7F5F
 - [x] width/height em todas as imagens, lazy loading abaixo da dobra, preload da foto do hero
 - [x] obrigado.html com noindex, 404 personalizada, vercel.json
 - [x] Script do IVO na index e na obrigado (`data-lp="lp-armanni-marmoraria"`)
+
+## Ajustes V2 (pedido da cliente, 11/11/2026)
+
+- Removidas todas as menções a prazo de entrega (faixa de números, etapa 6 do processo e FAQ, inclusive no JSON-LD). O "orçamento em até 24h" ficou, porque é tempo de orçamento.
+- Raio de atendimento: "Até 70 km a partir de São Bernardo. Acima disso, consulte."
+- Removido o parágrafo da história (aquisição, 13 + 8 anos) e o card "Mais de 20 anos". Campo "Atendemos": "ABC, São Paulo e região. Consulte a disponibilidade para a sua cidade."
+- Faixa de números ficou com 4 cards: orçamento em até 24h, até 18x, até 70 km e 12 meses de garantia.
+- Galeria "Obras entregues": 8 fotos novas da pasta "Novas Imagens" do Drive do cliente (cubas esculpidas, lavabos, quartzito, travertino, cozinha com península), em formato vertical 3:4. Duas delas também entraram em "O que a Armanni faz" (ilhas/penínsulas e banheiros/cubas esculpidas).
+- Número de avaliações do Google: estava fixo no código ("105"). Trocado por "Mais de 100 avaliações", que continua verdadeiro conforme o número cresce. Atualização automática exigiria a API do Google Places (chave + faturamento no Google Cloud) ou um widget pago de avaliações; alinhar com o account se a cliente quiser isso.
